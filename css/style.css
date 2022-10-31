@@ -1,0 +1,95 @@
+:root{
+    --primary: hsl(158, 36%, 37%);
+    --primaryAlt: hsl(158, 36%, 16%);
+    --white:  hsl(0, 0%, 100%);
+    --nameColor: hsl(212, 21%, 14%);
+    --fontColor: hsl(228, 12%, 48%);
+    --backgrouncolor: hsl(30, 38%, 92%);
+
+}
+/*  font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    background-color: var(--backgrouncolor);
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    justify-content: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    background-color: var(--primary);
+    border: none;
+}
+.boton:hover{
+    background-color: var(--primaryAlt);
+}
+.boton a{
+    text-decoration: none;
+    color: var(--white);
+    margin-left: .5rem;
+}
+
+
+
+.mainStyle{
+    color: var(--fontColor);
+}
+
+.productName{
+    color: var(--nameColor);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.price{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.price span{
+    font-size: .9rem;
+    color: var(--fontColor);
+    text-decoration: line-through;
+    
+}
+
+.shadowbox{
+    box-shadow: 0px 0px 16px 0px rgba(61,60,61,0.79);
+    background-color: var(--white);
+    padding:2rem;
+    border-radius: 0.5rem;
+    margin-top: 8rem;
+    margin-left: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+@media (min-width: 376px){
+    .shadowbox{
+        margin-left: 8rem;
+
+    }
+}
+
+.image{
+    background-image: url("../images/image-product-mobile.jpg");
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+.image img{
+    background-repeat: none;
+}
